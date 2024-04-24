@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		405D39702BD6D8EB00F19347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D396F2BD6D8EB00F19347 /* AppDelegate.swift */; };
 		405D39722BD6D8EB00F19347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39712BD6D8EB00F19347 /* SceneDelegate.swift */; };
-		405D39742BD6D8EB00F19347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39732BD6D8EB00F19347 /* ViewController.swift */; };
+		405D39742BD6D8EB00F19347 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39732BD6D8EB00F19347 /* AccountScreen.swift */; };
 		405D39772BD6D8EB00F19347 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 405D39762BD6D8EB00F19347 /* Base */; };
 		405D39792BD6D8EC00F19347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405D39782BD6D8EC00F19347 /* Assets.xcassets */; };
 		405D397C2BD6D8EC00F19347 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 405D397B2BD6D8EC00F19347 /* Base */; };
 		405D39872BD6D8ED00F19347 /* iOS_App_Final_xCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39862BD6D8ED00F19347 /* iOS_App_Final_xCodeTests.swift */; };
 		405D39912BD6D8ED00F19347 /* iOS_App_Final_xCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39902BD6D8ED00F19347 /* iOS_App_Final_xCodeUITests.swift */; };
 		405D39932BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39922BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift */; };
+		405D3A9E2BD9A1D100F19347 /* StoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D3A9D2BD9A1D100F19347 /* StoreScreen.swift */; };
+		405D3AA02BD9A25800F19347 /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D3A9F2BD9A25800F19347 /* CartScreen.swift */; };
+		405D3AA22BD9A29000F19347 /* CheckOutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D3AA12BD9A29000F19347 /* CheckOutScreen.swift */; };
+		405D3AA42BD9A37E00F19347 /* ProductScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D3AA32BD9A37E00F19347 /* ProductScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		405D396C2BD6D8EB00F19347 /* iOS App Final xCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS App Final xCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		405D396F2BD6D8EB00F19347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405D39712BD6D8EB00F19347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		405D39732BD6D8EB00F19347 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		405D39732BD6D8EB00F19347 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		405D39762BD6D8EB00F19347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		405D39782BD6D8EC00F19347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405D397B2BD6D8EC00F19347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		405D398C2BD6D8ED00F19347 /* iOS App Final xCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS App Final xCodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		405D39902BD6D8ED00F19347 /* iOS_App_Final_xCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_Final_xCodeUITests.swift; sourceTree = "<group>"; };
 		405D39922BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_Final_xCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		405D3A9D2BD9A1D100F19347 /* StoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreScreen.swift; sourceTree = "<group>"; };
+		405D3A9F2BD9A25800F19347 /* CartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
+		405D3AA12BD9A29000F19347 /* CheckOutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutScreen.swift; sourceTree = "<group>"; };
+		405D3AA32BD9A37E00F19347 /* ProductScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 			children = (
 				405D396F2BD6D8EB00F19347 /* AppDelegate.swift */,
 				405D39712BD6D8EB00F19347 /* SceneDelegate.swift */,
-				405D39732BD6D8EB00F19347 /* ViewController.swift */,
+				405D39732BD6D8EB00F19347 /* AccountScreen.swift */,
+				405D3A9D2BD9A1D100F19347 /* StoreScreen.swift */,
+				405D3A9F2BD9A25800F19347 /* CartScreen.swift */,
+				405D3AA12BD9A29000F19347 /* CheckOutScreen.swift */,
+				405D3AA32BD9A37E00F19347 /* ProductScreen.swift */,
 				405D39752BD6D8EB00F19347 /* Main.storyboard */,
 				405D39782BD6D8EC00F19347 /* Assets.xcassets */,
 				405D397A2BD6D8EC00F19347 /* LaunchScreen.storyboard */,
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				405D39742BD6D8EB00F19347 /* ViewController.swift in Sources */,
+				405D39742BD6D8EB00F19347 /* AccountScreen.swift in Sources */,
 				405D39702BD6D8EB00F19347 /* AppDelegate.swift in Sources */,
+				405D3AA02BD9A25800F19347 /* CartScreen.swift in Sources */,
+				405D3AA22BD9A29000F19347 /* CheckOutScreen.swift in Sources */,
 				405D39722BD6D8EB00F19347 /* SceneDelegate.swift in Sources */,
+				405D3AA42BD9A37E00F19347 /* ProductScreen.swift in Sources */,
+				405D3A9E2BD9A1D100F19347 /* StoreScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
