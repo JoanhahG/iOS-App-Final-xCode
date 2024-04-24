@@ -7,11 +7,12 @@
 
 import UIKit
 
-class AccountScreen: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Do any additional setup after loading the view.
+        // Testing git
     }
 //test 2
 
