@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="M2r-5N-thv">
             <objects>
-                <tabBarController id="9gx-rx-dGJ" sceneMemberID="viewController">
+                <tabBarController id="9gx-rx-dGJ" customClass="MainTabBarController" customModule="iOS_App_Final_xCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gnc-cq-8Jj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -28,14 +28,18 @@
             </objects>
             <point key="canvasLocation" x="-698" y="-224"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="E5q-eQ-nOF">
             <objects>
-                <navigationController id="n21-V8-m1p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lik-BO-deT"/>
+                <navigationController title="Home" id="n21-V8-m1p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="lik-BO-deT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ISu-ZM-XNV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Ihv-Ad-KQD" kind="relationship" relationship="rootViewController" id="YdG-j5-GGe"/>
@@ -45,11 +49,11 @@
             </objects>
             <point key="canvasLocation" x="-698" y="473"/>
         </scene>
-        <!--Item-->
+        <!--Account-->
         <scene sceneID="KkW-ET-za4">
             <objects>
-                <navigationController id="PlX-LD-enw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iaQ-QX-JHT"/>
+                <navigationController title="Account" id="PlX-LD-enw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Account" id="iaQ-QX-JHT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1S-e6-Xxb">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -62,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-1356" y="473"/>
         </scene>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="L6F-CT-nvm">
             <objects>
-                <viewController id="dSb-hk-wXi" sceneMemberID="viewController">
+                <viewController id="dSb-hk-wXi" customClass="AccountViewController" customModule="iOS_App_Final_xCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aUc-fQ-KsJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,15 +82,15 @@
             </objects>
             <point key="canvasLocation" x="-1356" y="1185"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="K7R-C5-D6l">
             <objects>
-                <viewController id="Ihv-Ad-KQD" sceneMemberID="viewController">
+                <viewController id="Ihv-Ad-KQD" customClass="HomeViewController" customModule="iOS_App_Final_xCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rsp-mc-x0X">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="KHb-be-Fs7"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="FNK-1f-jyk"/>
                 </viewController>
@@ -94,15 +98,15 @@
             </objects>
             <point key="canvasLocation" x="-698" y="1185"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="NIo-k0-Cng">
             <objects>
-                <viewController id="Rwx-5f-vOM" sceneMemberID="viewController">
+                <viewController id="Rwx-5f-vOM" customClass="CartViewController" customModule="iOS_App_Final_xCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gh7-XS-Gv8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="eCN-ms-sEC"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="AccentColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="PpE-jt-pkM"/>
@@ -111,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="-28" y="1185"/>
         </scene>
-        <!--Item-->
+        <!--Cart-->
         <scene sceneID="Xhc-hP-dwu">
             <objects>
-                <navigationController id="KSf-Y5-E9m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6Ud-bg-dgI"/>
+                <navigationController title="Cart" id="KSf-Y5-E9m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cart" id="6Ud-bg-dgI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJs-tg-a0M">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -133,14 +137,11 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
