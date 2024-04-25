@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Organic Apples",
+    "price": 2.99,
+    "category": "Fruits",
+    "description": "Fresh organic apples picked from local orchards.",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "title": "Whole Wheat Bread",
+    "price": 3.49,
+    "category": "Bakery",
+    "description": "Nutritious whole wheat bread baked daily.",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Organic Milk",
+    "price": 4.99,
+    "category": "Dairy",
+    "description": "Certified organic milk sourced from grass-fed cows.",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "title": "Free Range Eggs",
+    "price": 2.79,
+    "category": "Dairy",
+    "description": "Farm-fresh free-range eggs from pasture-raised hens.",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "title": "Fresh Spinach",
+    "price": 1.99,
+    "category": "Vegetables",
+    "description": "Crisp and tender spinach leaves packed with nutrients.",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "title": "Wild-Caught Salmon",
+    "price": 9.99,
+    "category": "Seafood",
+    "description": "Sustainably sourced wild-caught salmon fillets.",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "title": "Organic Quinoa",
+    "price": 5.49,
+    "category": "Grains",
+    "description": "Nutritious organic quinoa grains perfect for salads and pilafs.",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "title": "Extra Virgin Olive Oil",
+    "price": 8.99,
+    "category": "Pantry",
+    "description": "Cold-pressed extra virgin olive oil for cooking and salads.",
+    "image": ""
+  }
+]
