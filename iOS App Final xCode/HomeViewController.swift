@@ -11,5 +11,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         //Home controller code here
         self.title = "Home"
+        
+        var inventory = Inventory.sharedInstance.currentInventory;
+        print(inventory)
     }
 }
