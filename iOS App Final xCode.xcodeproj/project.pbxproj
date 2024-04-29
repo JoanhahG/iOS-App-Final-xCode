@@ -17,6 +17,7 @@
 		405D39932BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39922BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift */; };
 		496028E52BD9EF4A00C3880B /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496028E42BD9EF4A00C3880B /* Inventory.swift */; };
 		496028E92BD9F8EA00C3880B /* inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 496028E82BD9F8EA00C3880B /* inventory.json */; };
+		4993D5012BDF545A002E4CEF /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993D5002BDF545A002E4CEF /* HomeCollectionViewCell.swift */; };
 		49B7FCE62BD9A08800D049CD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B7FCE52BD9A08800D049CD /* AccountViewController.swift */; };
 		49B7FCE82BD9A3E700D049CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B7FCE72BD9A3E700D049CD /* HomeViewController.swift */; };
 		49B7FCEA2BD9A43F00D049CD /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B7FCE92BD9A43F00D049CD /* CartViewController.swift */; };
@@ -55,6 +56,7 @@
 		405D39922BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_Final_xCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		496028E42BD9EF4A00C3880B /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		496028E82BD9F8EA00C3880B /* inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
+		4993D5002BDF545A002E4CEF /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		49B7FCE52BD9A08800D049CD /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		49B7FCE72BD9A3E700D049CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		49B7FCE92BD9A43F00D049CD /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				405D396F2BD6D8EB00F19347 /* AppDelegate.swift */,
 				405D39712BD6D8EB00F19347 /* SceneDelegate.swift */,
 				405D39752BD6D8EB00F19347 /* Main.storyboard */,
+				4993D5002BDF545A002E4CEF /* HomeCollectionViewCell.swift */,
 				496028E82BD9F8EA00C3880B /* inventory.json */,
 				405D39782BD6D8EC00F19347 /* Assets.xcassets */,
 				405D397A2BD6D8EC00F19347 /* LaunchScreen.storyboard */,
@@ -281,6 +284,7 @@
 				49B7FCEA2BD9A43F00D049CD /* CartViewController.swift in Sources */,
 				405D39722BD6D8EB00F19347 /* SceneDelegate.swift in Sources */,
 				49B7FCE82BD9A3E700D049CD /* HomeViewController.swift in Sources */,
+				4993D5012BDF545A002E4CEF /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
