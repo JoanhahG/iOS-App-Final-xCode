@@ -7,7 +7,7 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Fresh organic apples picked from local orchards.",
-    "image": ""
+    "image": "organic_apple"
   },
   {
     "id": 2,
@@ -17,17 +17,17 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Nutritious whole wheat bread baked daily.",
-    "image": ""
+    "image": "whole_wheat_bread"
   },
   {
     "id": 3,
-    "title": "Organic Milk",
+    "title": "Low Fat Milk",
     "price": 4.99,
     "category": "Dairy",
     "cartCount" : 0,
     "invCount": 99,
     "description": "Certified organic milk sourced from grass-fed cows.",
-    "image": ""
+    "image": "low_fat_milk"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Farm-fresh free-range eggs from pasture-raised hens.",
-    "image": ""
+    "image": "free_range_eggs"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Crisp and tender spinach leaves packed with nutrients.",
-    "image": ""
+    "image": "fresh_spinach"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Sustainably sourced wild-caught salmon fillets.",
-    "image": ""
+    "image": "wild_caught_salmon"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Nutritious organic quinoa grains perfect for salads and pilafs.",
-    "image": ""
+    "image": "organic_quinoa"
   },
   {
     "id": 8,
@@ -77,6 +77,6 @@
     "cartCount" : 0,
     "invCount": 99,
     "description": "Cold-pressed extra virgin olive oil for cooking and salads.",
-    "image": ""
+    "image": "extra_virgin_olive_oil"
   }
 ]
