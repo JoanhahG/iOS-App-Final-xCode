@@ -33,7 +33,7 @@ struct CheckOutCards: View {
                         .frame(width: 150, height: 150)
                         .scaledToFit()
     
-                    Text("$3.99")
+                    Text("\(product.price.formatted(.currency(code: "USD")))")
                 })
             })
             .frame(width: 380, height: 170)
