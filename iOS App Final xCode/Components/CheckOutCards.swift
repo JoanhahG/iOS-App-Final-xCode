@@ -6,33 +6,35 @@
 //
 
 import SwiftUI
-let product = Product(id: 1, title: "Organic Apples", price: Decimal(2.99), category: "Fruits", description: "Fresh", image: "orange")
+let product = Inventory.sharedInstance.currentInventory.first
 
 struct CheckOutCards: View {
 
     var body: some View {
-        HStack(alignment: .center,spacing: 80, content: {
-            VStack(content: {
-                Text(product.title)
-                Text(product.description)
-                
-                Button. {
-                     
-                } label:
-                {
-                   Text("Remove")
-                        
-                }
+        if let product {
+            HStack(alignment: .center,spacing: 80, content: {
+                VStack(content: {
+                    Text(product.title)
+                    Text(product.description)
+                    
+                    Button {
+                         
+                    } label:
+                    {
+                       Text("Remove")
+                            
+                    }
+                })
+                VStack(content: {
+                    Image(product.image)
+                        .resizable()
+                        .cornerRadius(25)
+                        .frame(width: 150, height: 150)
+                        .scaledToFit()
+                    Text("product.price")
+                })
             })
-            VStack(content: {
-                Image(product.image)
-                    .resizable()
-                    .cornerRadius(25)
-                    .frame(width: 150, height: 150)
-                    .scaledToFit()
-                Text("product.price")
-            })
-        })
+        }
     }
 }
 #Preview{

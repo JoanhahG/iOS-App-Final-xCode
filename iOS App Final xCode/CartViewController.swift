@@ -6,15 +6,18 @@
 //
 import UIKit
 
-var cartItems = [Product]()
-
 class CartViewController: UIViewController {
     
-    @IBOutlet weak var CheckOutButton: UIButton!
+    var cartItems = [Product]()
+    var inventoryItems = [Product]()
     
+    @IBOutlet weak var CheckOutButton: UIButton!
+        
     let inventory = Inventory.sharedInstance.currentInventory;
    
     override func viewDidAppear(_ animated: Bool) {
+        inventoryItems = Inventory.sharedInstance.currentInventory;
+        print(inventoryItems[1])
         if cartItems.isEmpty {
            // CheckOutButton.isEnabled = false
            // print("hi")
@@ -26,7 +29,6 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         //Cart controller code here
         self.title = "Cart"
-        print(inventory[1])
     }
     
 }
