@@ -154,6 +154,9 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="mMu-aH-0bv"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="StepperValueChanged:" destination="0OO-BM-RVi" eventType="valueChanged" id="7hi-yO-wgL"/>
+                                                                    </connections>
                                                                 </stepper>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-ue-ArM">
                                                                     <rect key="frame" x="149" y="0.0" width="60" height="30"/>

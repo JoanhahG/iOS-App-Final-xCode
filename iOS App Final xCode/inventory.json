@@ -4,79 +4,79 @@
     "title": "Organic Apples",
     "price": 2.99,
     "category": "Fruits",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Fresh organic apples picked from local orchards.",
-    "image": ""
+    "image": "organic_apple"
   },
   {
     "id": 2,
     "title": "Whole Wheat Bread",
     "price": 3.49,
     "category": "Bakery",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Nutritious whole wheat bread baked daily.",
-    "image": ""
+    "image": "whole_wheat_bread"
   },
   {
     "id": 3,
-    "title": "Organic Milk",
+    "title": "Low Fat Milk",
     "price": 4.99,
     "category": "Dairy",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Certified organic milk sourced from grass-fed cows.",
-    "image": ""
+    "image": "low_fat_milk"
   },
   {
     "id": 4,
     "title": "Free Range Eggs",
     "price": 2.79,
     "category": "Dairy",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Farm-fresh free-range eggs from pasture-raised hens.",
-    "image": ""
+    "image": "free_range_eggs"
   },
   {
     "id": 5,
     "title": "Fresh Spinach",
     "price": 1.99,
     "category": "Vegetables",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Crisp and tender spinach leaves packed with nutrients.",
-    "image": ""
+    "image": "fresh_spinach"
   },
   {
     "id": 6,
     "title": "Wild-Caught Salmon",
     "price": 9.99,
     "category": "Seafood",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Sustainably sourced wild-caught salmon fillets.",
-    "image": ""
+    "image": "wild_caught_salmon"
   },
   {
     "id": 7,
     "title": "Organic Quinoa",
     "price": 5.49,
     "category": "Grains",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Nutritious organic quinoa grains perfect for salads and pilafs.",
-    "image": ""
+    "image": "organic_quinoa"
   },
   {
     "id": 8,
     "title": "Extra Virgin Olive Oil",
     "price": 8.99,
     "category": "Pantry",
-    "cartCount" : 1,
+    "cartCount" : 0,
     "invCount": 99,
     "description": "Cold-pressed extra virgin olive oil for cooking and salads.",
-    "image": ""
+    "image": "extra_virgin_olive_oil"
   }
 ]
