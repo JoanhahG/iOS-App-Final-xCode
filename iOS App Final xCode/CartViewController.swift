@@ -25,7 +25,6 @@ class CartViewController: UIViewController {
         }
   
     }
-    
     override func viewDidLoad() {
         //Cart controller code here
         self.title = "Cart"
