@@ -21,7 +21,8 @@ struct Product : Decodable{
     var title : String
     var price : Decimal
     var category : String
-    var itemCount : Int
+    var cartCount : Int
+    var invCount : Int
     var description : String
     var image : String
 }
