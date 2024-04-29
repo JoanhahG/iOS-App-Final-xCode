@@ -9,10 +9,9 @@ import UIKit
 class CartViewController: UIViewController {
     @IBOutlet weak var CheckOutButton: UIButton!
         
-    
 
     override func viewDidAppear(_ animated: Bool) {
-        var inventory = Inventory.sharedInstance.currentInventory;
+        let inventory = Inventory.sharedInstance.currentInventory;
         var checkOutItems = [Product]()
         
         for i in inventory{
@@ -23,6 +22,7 @@ class CartViewController: UIViewController {
         if checkOutItems.isEmpty {
            CheckOutButton.isEnabled = false
         }
+        
     }
     override func viewDidLoad() {
         //Cart controller code here

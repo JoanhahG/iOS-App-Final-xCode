@@ -134,10 +134,12 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
                                 </buttonConfiguration>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mln-tH-b3w">
-                                <rect key="frame" x="16" y="200" width="361" height="652"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YI7-rg-GUw">
+                                <rect key="frame" x="0.0" y="139" width="393" height="713"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1Uw-tp-drv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dM7-pe-BPu"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eCN-ms-sEC"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
