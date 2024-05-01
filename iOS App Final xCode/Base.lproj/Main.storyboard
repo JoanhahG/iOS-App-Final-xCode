@@ -223,7 +223,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-4b-8SM">
                                 <rect key="frame" x="16" y="103" width="361" height="28.333333333333343"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Proceed To Checkout">
                                     <backgroundConfiguration key="background" cornerRadius="25">
                                         <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -276,6 +275,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bananas1" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

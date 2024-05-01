@@ -17,6 +17,8 @@
 		405D39932BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D39922BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift */; };
 		405D3AA72BDC939200F19347 /* CheckOutCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D3AA62BDC939200F19347 /* CheckOutCards.swift */; };
 		40E3D9E12BDF3EBA0070629A /* CheckOutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3D9E02BDF3EBA0070629A /* CheckOutList.swift */; };
+		40E3D9E32BE1DC9A0070629A /* CheckOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3D9E22BE1DC9A0070629A /* CheckOutButton.swift */; };
+		40E3D9E62BE1F5890070629A /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3D9E52BE1F5890070629A /* CartView.swift */; };
 		496028E52BD9EF4A00C3880B /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496028E42BD9EF4A00C3880B /* Inventory.swift */; };
 		496028E92BD9F8EA00C3880B /* inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 496028E82BD9F8EA00C3880B /* inventory.json */; };
 		4993D5012BDF545A002E4CEF /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993D5002BDF545A002E4CEF /* HomeCollectionViewCell.swift */; };
@@ -58,6 +60,8 @@
 		405D39922BD6D8ED00F19347 /* iOS_App_Final_xCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_Final_xCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		405D3AA62BDC939200F19347 /* CheckOutCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutCards.swift; sourceTree = "<group>"; };
 		40E3D9E02BDF3EBA0070629A /* CheckOutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutList.swift; sourceTree = "<group>"; };
+		40E3D9E22BE1DC9A0070629A /* CheckOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutButton.swift; sourceTree = "<group>"; };
+		40E3D9E52BE1F5890070629A /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		496028E42BD9EF4A00C3880B /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		496028E82BD9F8EA00C3880B /* inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
 		4993D5002BDF545A002E4CEF /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -128,7 +132,7 @@
 				49B7FCE92BD9A43F00D049CD /* CartViewController.swift */,
 				49B7FCE72BD9A3E700D049CD /* HomeViewController.swift */,
 				49B7FCE52BD9A08800D049CD /* AccountViewController.swift */,
-				405D3AA52BDC935100F19347 /* Components */,
+				405D3AA52BDC935100F19347 /* Check Out Components */,
 			);
 			path = "iOS App Final xCode";
 			sourceTree = "<group>";
@@ -150,13 +154,15 @@
 			path = "iOS App Final xCodeUITests";
 			sourceTree = "<group>";
 		};
-		405D3AA52BDC935100F19347 /* Components */ = {
+		405D3AA52BDC935100F19347 /* Check Out Components */ = {
 			isa = PBXGroup;
 			children = (
 				405D3AA62BDC939200F19347 /* CheckOutCards.swift */,
 				40E3D9E02BDF3EBA0070629A /* CheckOutList.swift */,
+				40E3D9E22BE1DC9A0070629A /* CheckOutButton.swift */,
+				40E3D9E52BE1F5890070629A /* CartView.swift */,
 			);
-			path = Components;
+			path = "Check Out Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +303,10 @@
 				40E3D9E12BDF3EBA0070629A /* CheckOutList.swift in Sources */,
 				496028E52BD9EF4A00C3880B /* Inventory.swift in Sources */,
 				49B7FCEC2BD9A56200D049CD /* MainTabBarController.swift in Sources */,
+				40E3D9E62BE1F5890070629A /* CartView.swift in Sources */,
 				49B7FCEA2BD9A43F00D049CD /* CartViewController.swift in Sources */,
 				405D39722BD6D8EB00F19347 /* SceneDelegate.swift in Sources */,
+				40E3D9E32BE1DC9A0070629A /* CheckOutButton.swift in Sources */,
 				49B7FCE82BD9A3E700D049CD /* HomeViewController.swift in Sources */,
 				4993D5012BDF545A002E4CEF /* HomeCollectionViewCell.swift in Sources */,
 			);
