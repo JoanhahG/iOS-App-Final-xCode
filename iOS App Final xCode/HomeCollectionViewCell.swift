@@ -15,6 +15,14 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemCountStepper: UIStepper!
     @IBOutlet weak var priceLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+            // Customize stepper icon colors
+            itemCountStepper.setDecrementImage(itemCountStepper.decrementImage(for: .normal), for: .normal)
+            itemCountStepper.setIncrementImage(itemCountStepper.incrementImage(for: .normal), for: .normal)
+            itemCountStepper.tintColor = UIColor.systemGray5 // Change color to your desired color
+        }
+    
     @IBAction func StepperValueChanged(_ sender: UIStepper) {
         Inventory.sharedInstance.currentInventory[sender.tag].cartCount = Int(sender.value)
         itemCountLabel.text = String(Inventory.sharedInstance.currentInventory[sender.tag].cartCount)
