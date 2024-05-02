@@ -32,7 +32,7 @@
         <scene sceneID="E5q-eQ-nOF">
             <objects>
                 <navigationController title="Home" id="n21-V8-m1p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="lik-BO-deT"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="lik-BO-deT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ISu-ZM-XNV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -53,7 +53,7 @@
         <scene sceneID="KkW-ET-za4">
             <objects>
                 <navigationController title="Account" id="PlX-LD-enw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Account" id="iaQ-QX-JHT"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="account" id="iaQ-QX-JHT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1S-e6-Xxb">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -210,6 +210,8 @@
                             <constraint firstAttribute="bottom" secondItem="vdZ-Au-5jr" secondAttribute="bottom" id="U0l-jo-EGb"/>
                             <constraint firstItem="vdZ-Au-5jr" firstAttribute="trailing" secondItem="KHb-be-Fs7" secondAttribute="trailing" constant="20" id="X30-Lq-ubX"/>
                             <constraint firstItem="vdZ-Au-5jr" firstAttribute="leading" secondItem="KHb-be-Fs7" secondAttribute="leading" constant="20" id="bOx-E8-pxo"/>
+                            <constraint firstItem="vdZ-Au-5jr" firstAttribute="trailing" secondItem="KHb-be-Fs7" secondAttribute="trailing" constant="20" id="jD1-Xm-a84"/>
+                            <constraint firstItem="vdZ-Au-5jr" firstAttribute="leading" secondItem="KHb-be-Fs7" secondAttribute="leading" constant="20" id="q8b-WN-aPz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FNK-1f-jyk"/>
@@ -269,7 +271,7 @@
         <scene sceneID="Xhc-hP-dwu">
             <objects>
                 <navigationController title="Cart" id="KSf-Y5-E9m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cart" id="6Ud-bg-dgI"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" id="6Ud-bg-dgI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJs-tg-a0M">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -284,7 +286,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account" width="35" height="30"/>
         <image name="bananas1" width="128" height="128"/>
+        <image name="cart" width="35" height="29"/>
+        <image name="home" width="35" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
