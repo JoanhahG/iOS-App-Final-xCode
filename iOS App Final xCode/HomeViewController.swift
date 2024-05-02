@@ -32,31 +32,15 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             size = ((collectionView.frame.size.height-10)/2.2) - 50
         }
         
-        cell.contentView.layer.cornerRadius = 2.0
-        cell.contentView.layer.borderWidth = 1.0
-        cell.contentView.layer.borderColor = UIColor.clear.cgColor
-        cell.contentView.layer.masksToBounds = true
-
-        cell.layer.shadowColor = UIColor.systemCyan.cgColor
-        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowRadius = 2.0
-        cell.layer.shadowOpacity = 0.5
-        cell.layer.masksToBounds = false
-        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-        
         cell.productTitle.text = item.title
         cell.productImage.image = UIImage(named: item.image)
         cell.productImage.widthAnchor.constraint(equalToConstant: CGFloat(size)).isActive = true
         cell.productImage.heightAnchor.constraint(equalToConstant: CGFloat(size)).isActive = true
         cell.itemCountLabel.text = String(item.cartCount)
         cell.priceLabel.text = item.price.formatted(.currency(code: "USD"))
-        cell.itemCountStepper.setDecrementImage(UIImage(systemName: "minus"), for: .normal)
-        cell.itemCountStepper.setIncrementImage(UIImage(systemName: "plus"), for: .normal)
-        cell.itemCountStepper.tintColor = UIColor.black
+
         cell.itemCountStepper.value = Double(item.cartCount)
         cell.itemCountStepper.tag = indexPath.row
-        cell.contentView.layer.cornerRadius = 2.0
-        cell.contentView.layer.backgroundColor = CGColor(gray: 5, alpha: 0)
         return cell
         
     }
