@@ -17,11 +17,12 @@ class Inventory{
 }
 
 struct Product : Decodable{
-    var id : Int
+    var id : Int // change to var id = UUID()?
     var title : String
     var price : Decimal
     var category : String
-    var itemCount : Int
+    var cartCount : Int
+    var invCount : Int
     var description : String
     var image : String
 }
