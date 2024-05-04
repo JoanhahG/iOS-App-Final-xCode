@@ -49,11 +49,5 @@ extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSou
         return checkOutItems.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.size.width-10)
-        return CGSize(width: size, height: size)
-    }
-    
-    
 }
 
