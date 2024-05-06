@@ -5,6 +5,7 @@
 //  Created by chyenne parrett on 4/28/24.
 //
 
+
 import SwiftUI
 
 struct CheckOutList: View {
@@ -21,6 +22,7 @@ struct CheckOutList: View {
                 }
             }
         }.navigationViewStyle(StackNavigationViewStyle())
+
     }
 }
 
