@@ -24,7 +24,7 @@ class CartViewController: UIViewController {
         }
         CheckOutButton.isEnabled = !checkOutItems.isEmpty
     
-        
+        cartCollectionView.reloadData()
     }
     override func viewDidLoad() {
         //Cart controller code here
@@ -38,7 +38,7 @@ class CartViewController: UIViewController {
 
 extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cartCell", for: indexPath) as! CartCells
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CartCells
         let item = checkOutItems[indexPath.row]
         cell.nameLabel.text = item.title
         cell.productImage.image = UIImage(named: item.image)
