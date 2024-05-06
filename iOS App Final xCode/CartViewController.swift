@@ -24,7 +24,7 @@ class CartViewController: UIViewController {
         }
         CheckOutButton.isEnabled = !checkOutItems.isEmpty
     
-        
+        cartCollectionView.reloadData()
     }
     override func viewDidLoad() {
         //Cart controller code here
@@ -36,19 +36,35 @@ class CartViewController: UIViewController {
     
 
 
-extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSource{
+extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cartCell", for: indexPath) as! CartCells
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CartCells
         let item = checkOutItems[indexPath.row]
         cell.nameLabel.text = item.title
         cell.productImage.image = UIImage(named: item.image)
         cell.cartCountLabel.text = String(item.cartCount)
         cell.productPrice.text = item.price.formatted(.currency(code: "USD"))
         cell.descriptionLabel.text = item.description
+        cell.layoutIfNeeded()
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return checkOutItems.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        var size = 100.00
+        if UIDevice.current.orientation.isLandscape{
+            size = ((collectionView.frame.size.height-10))
+            return CGSize(width: size, height: size/2)
+        }
+        else{
+            size = ((collectionView.frame.size.width-10))
+            return CGSize(width: size, height: size/2)
+        }
     }
 }
