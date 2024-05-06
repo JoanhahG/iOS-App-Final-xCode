@@ -59,12 +59,12 @@ extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         var size = 100.00
         if UIDevice.current.orientation.isLandscape{
-            size = ((collectionView.frame.size.height-10))
-            return CGSize(width: size, height: size/2)
+            size = ((collectionView.frame.size.height))
+            return CGSize(width: size, height: size)
         }
         else{
-            size = ((collectionView.frame.size.width-10))
-            return CGSize(width: size, height: size/2)
+            size = ((collectionView.frame.size.width))
+            return CGSize(width: 373, height: 150)
         }
     }
 }
