@@ -41,6 +41,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
 
         cell.itemCountStepper.value = Double(item.cartCount)
         cell.itemCountStepper.tag = indexPath.row
+        cell.layoutIfNeeded()
         return cell
         
     }
@@ -51,13 +52,14 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        if UIDevice.current.orientation.isPortrait{
-            let size = (collectionView.frame.size.width-10)/2.2
-            return CGSize(width: size, height: size + (size * 0.2))
-        }
-        else {
-            let size = (collectionView.frame.size.height)/2.2
+        var size = 100.00
+        if UIDevice.current.orientation.isLandscape{
+            size = ((collectionView.frame.size.height-10)/2.2)
             return CGSize(width: size + (size * 0.4), height: size + (size * 0.2))
+        }
+        else{
+            size = ((collectionView.frame.size.width-10)/2.2)
+            return CGSize(width: size, height: size + (size * 0.2))
         }
     }
 }
