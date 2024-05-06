@@ -24,18 +24,21 @@ class CartViewController: UIViewController {
         }
         CheckOutButton.isEnabled = !checkOutItems.isEmpty
     
-        cartCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
     }
     override func viewDidLoad() {
         //Cart controller code here
         self.title = "Cart"
-        cartCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        cartCollectionView.collectionViewLayout = UICollectionViewFlowLayout()       
        }
     }
-extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+
+    
+
+
+extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CartCells
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cartCell", for: indexPath) as! CartCells
         let item = checkOutItems[indexPath.row]
         cell.nameLabel.text = item.title
         cell.productImage.image = UIImage(named: item.image)
@@ -48,6 +51,4 @@ extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return checkOutItems.count
     }
-    
 }
-
