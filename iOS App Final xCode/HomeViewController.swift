@@ -15,8 +15,14 @@ class HomeViewController: UIViewController {
         
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         let padding: CGFloat = 5
-        collectionView.contentInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-
+        collectionView.contentInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)// Adjust based on your estimated cell size
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      
+      // Reload data from Inventory or any data source
+      collectionView.reloadData()
     }
 }
 
@@ -59,7 +65,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         }
         else{
             size = ((collectionView.frame.size.width-10)/2.2)
-            return CGSize(width: size, height: size + (size * 0.2))
+            return CGSize(width: size, height: size + (size * 0.4))
         }
     }
 }
