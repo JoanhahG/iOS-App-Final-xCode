@@ -9,7 +9,7 @@ import SwiftUI
 
 class CartViewController: UIViewController {
     var checkOutItems = [Product]()
-    @IBOutlet weak var CheckOutButton: UIButton!
+    @IBOutlet weak var checkOutButton: UIButton!
         
     @IBOutlet weak var cartCollectionView: UICollectionView!
     
@@ -22,7 +22,7 @@ class CartViewController: UIViewController {
                 checkOutItems.append(i)
             }
         }
-        CheckOutButton.isEnabled = !checkOutItems.isEmpty
+        checkOutButton.isEnabled = !checkOutItems.isEmpty
     
         cartCollectionView.reloadData()
     }
@@ -31,7 +31,12 @@ class CartViewController: UIViewController {
         self.title = "Cart"
         cartCollectionView.collectionViewLayout = UICollectionViewFlowLayout()       
        }
+    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+        if let view = cartCollectionView {
+            view.collectionViewLayout = UICollectionViewFlowLayout()
+        }
     }
+}
 
     
 
@@ -47,6 +52,8 @@ extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSou
         cell.cartCountLabel.text = String(item.cartCount)
         cell.productPrice.text = item.price.formatted(.currency(code: "USD"))
         cell.descriptionLabel.text = item.description
+        cell.removeButton.tag = item.id - 1
+        cell.addButton.tag = item.id - 1
         cell.layoutIfNeeded()
         return cell
     }
@@ -56,14 +63,10 @@ extension CartViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        var size = 100.00
         if UIDevice.current.orientation.isLandscape{
-            size = ((collectionView.frame.size.height))
-            return CGSize(width: size, height: size)
+            return CGSize(width: 373, height: 150)
         }
         else{
-            size = ((collectionView.frame.size.width))
             return CGSize(width: 373, height: 150)
         }
     }

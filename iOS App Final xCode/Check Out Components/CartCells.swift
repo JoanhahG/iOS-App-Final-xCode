@@ -22,8 +22,19 @@ class CartCells: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        beigeImageView.layer.cornerRadius = 25
+        beigeImageView.layer.cornerRadius = 15
         beigeImageView.clipsToBounds = true
+        addButton.layer.cornerRadius = 15
+        removeButton.layer.cornerRadius = 15
     }
     
+    @IBAction func addButtonPressed(_ sender: UIButton) {
+        Inventory.sharedInstance.currentInventory[sender.tag].cartCount += 1
+        cartCountLabel.text = String(Inventory.sharedInstance.currentInventory[sender.tag].cartCount)
+    }
+    
+    @IBAction func minusButtonPressed(_ sender: UIButton) {
+        Inventory.sharedInstance.currentInventory[sender.tag].cartCount -= 1
+        cartCountLabel.text = String(Inventory.sharedInstance.currentInventory[sender.tag].cartCount)
+    }
 }
