@@ -9,6 +9,7 @@ import UIKit
 
 class CheckOutViewController: UIViewController {
 
+    @IBOutlet weak var orderListLabel: UILabel!
     @IBOutlet weak var checkOutStack: UIStackView!
     @IBOutlet weak var thankYouMessage: UILabel!
     @IBOutlet weak var subtotalLabel: UILabel!
@@ -30,6 +31,7 @@ class CheckOutViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        orderListLabel.isHidden = true
         thankYouMessage.isHidden = true
 
 
@@ -37,7 +39,15 @@ class CheckOutViewController: UIViewController {
     
     @IBAction func orderPlacedPressed(_ sender: Any) {
         checkOutStack.isHidden = true
+        var thankYouAddOn: String = ""
+        for products in Inventory.sharedInstance.currentInventory {
+            if products.cartCount > 0 {
+                thankYouAddOn += "\n x\(products.cartCount) \(products.title)"
+            }
+        }
+        orderListLabel.text = thankYouAddOn
         thankYouMessage.isHidden = false
+        orderListLabel.isHidden = false
         for products in Inventory.sharedInstance.currentInventory {
             //products.cartCount = 0
         }
