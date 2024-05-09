@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9gx-rx-dGJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9gx-rx-dGJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -75,10 +75,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0fT-OM-GT6">
-                                <rect key="frame" x="0.0" y="92" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="21"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kwik-E-Mart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14U-V8-Yn2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kwik-E-Mart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14U-V8-Yn2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="UK0-NS-Bmf"/>
@@ -87,8 +87,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5r7-6G-6B2">
-                                        <rect key="frame" x="0.0" y="20" width="414" height="41"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5r7-6G-6B2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="22"/>
                                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Nvc-9M-SAW"/>
@@ -456,11 +456,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmM-7q-UhQ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmM-7q-UhQ">
                                 <rect key="frame" x="20" y="221" width="374" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdhcsuidhisuhfsdf fsidfsdf sd fs df sdf sd f sdf sd f dsf sd f sdf sd fs df sd fsd f sd fs df sdf sd f sdf sd f" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-Ct-ELb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="sdhcsuidhisuhfsdf fsidfsdf sd fs df sdf sd f sdf sd f dsf sd f sdf sd fs df sd fsd f sd fs df sdf sd f sdf sd f" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-Ct-ELb">
                                         <rect key="frame" x="0.0" y="8" width="374" height="91.5"/>
                                         <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
                                         <nil key="textColor"/>
@@ -468,9 +467,10 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Gi0-Ct-ELb" firstAttribute="leading" secondItem="5V8-9V-SyE" secondAttribute="leading" id="LBb-f7-nlJ"/>
-                                    <constraint firstItem="Gi0-Ct-ELb" firstAttribute="trailing" secondItem="5V8-9V-SyE" secondAttribute="trailing" id="Qf8-BW-b4n"/>
-                                    <constraint firstItem="Gi0-Ct-ELb" firstAttribute="top" secondItem="5V8-9V-SyE" secondAttribute="top" constant="8" id="rFh-b5-XPC"/>
+                                    <constraint firstItem="Gi0-Ct-ELb" firstAttribute="top" secondItem="dmM-7q-UhQ" secondAttribute="topMargin" id="65Q-zu-cla"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gi0-Ct-ELb" secondAttribute="trailing" id="EZ6-er-xf8"/>
+                                    <constraint firstItem="Gi0-Ct-ELb" firstAttribute="centerX" secondItem="dmM-7q-UhQ" secondAttribute="centerX" id="WyA-wv-Ca5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gi0-Ct-ELb" secondAttribute="bottom" constant="567.5" id="aJZ-Iv-HV3"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="oDN-oS-KBT"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="5V8-9V-SyE"/>
@@ -480,9 +480,6 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal: $XX.xx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohT-X5-KVr">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="1Ac-37-k9x"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -541,34 +538,65 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-N5-1fT">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ijj-09-hXZ">
                                         <rect key="frame" x="0.0" y="480" width="382" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Place Your Order" cornerStyle="dynamic">
-                                            <backgroundConfiguration key="background" cornerRadius="25"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="orderPlacedPressed:" destination="QjC-CS-EiL" eventType="touchUpInside" id="Wz5-3m-ErV"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-N5-1fT">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Place Your Order" cornerStyle="dynamic">
+                                                    <backgroundConfiguration key="background" cornerRadius="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="orderPlacedPressed:" destination="QjC-CS-EiL" eventType="touchUpInside" id="Wz5-3m-ErV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank You For Your Purchase!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-RJ-CSi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You For Your Purchase!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-RJ-CSi">
                                 <rect key="frame" x="0.0" y="92" width="414" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="JGk-uy-OH8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAI-W2-IrJ">
+                                <rect key="frame" x="16" y="733" width="382" height="50"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V3C-6Z-eTb"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Return To Store"/>
+                                <connections>
+                                    <action selector="returnToHomePressed:" destination="QjC-CS-EiL" eventType="touchUpInside" id="Rkx-d1-d86"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fOI-ay-FBk"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fOI-ay-FBk" firstAttribute="trailing" secondItem="9bh-2K-Kut" secondAttribute="trailing" constant="16" id="C7w-Fp-NHc"/>
-                            <constraint firstItem="9bh-2K-Kut" firstAttribute="leading" secondItem="fOI-ay-FBk" secondAttribute="leading" constant="16" id="Uib-kc-Dxq"/>
-                            <constraint firstItem="9bh-2K-Kut" firstAttribute="top" secondItem="fOI-ay-FBk" secondAttribute="top" constant="91" id="lLV-cW-QG2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="dmM-7q-UhQ" secondAttribute="bottom" constant="-75" id="6kd-uZ-b4M"/>
+                            <constraint firstItem="dmM-7q-UhQ" firstAttribute="top" secondItem="61N-RJ-CSi" secondAttribute="bottom" id="6nQ-7w-E8c"/>
+                            <constraint firstItem="dmM-7q-UhQ" firstAttribute="trailing" secondItem="MFY-5h-6jc" secondAttribute="trailingMargin" id="7if-zO-huu"/>
+                            <constraint firstItem="9bh-2K-Kut" firstAttribute="centerY" secondItem="MFY-5h-6jc" secondAttribute="centerY" id="AKE-Dd-7E1"/>
+                            <constraint firstItem="61N-RJ-CSi" firstAttribute="centerX" secondItem="9bh-2K-Kut" secondAttribute="centerX" id="CYn-8n-GBg"/>
+                            <constraint firstItem="61N-RJ-CSi" firstAttribute="leading" secondItem="fOI-ay-FBk" secondAttribute="leading" id="F7Z-x0-rJf"/>
+                            <constraint firstItem="61N-RJ-CSi" firstAttribute="top" secondItem="fOI-ay-FBk" secondAttribute="top" id="Hfh-tM-d2c"/>
+                            <constraint firstItem="fOI-ay-FBk" firstAttribute="bottom" secondItem="CAI-W2-IrJ" secondAttribute="bottom" constant="30" id="Hxy-62-N86"/>
+                            <constraint firstItem="9bh-2K-Kut" firstAttribute="top" secondItem="fOI-ay-FBk" secondAttribute="top" constant="91" id="P1Y-pX-gyH"/>
+                            <constraint firstItem="dmM-7q-UhQ" firstAttribute="leading" secondItem="MFY-5h-6jc" secondAttribute="leadingMargin" id="T2w-GN-Mad"/>
+                            <constraint firstItem="9bh-2K-Kut" firstAttribute="centerX" secondItem="dmM-7q-UhQ" secondAttribute="centerX" id="cm2-ji-MIF"/>
+                            <constraint firstItem="CAI-W2-IrJ" firstAttribute="leading" secondItem="fOI-ay-FBk" secondAttribute="leading" constant="16" id="jNI-Lq-boq"/>
+                            <constraint firstItem="9bh-2K-Kut" firstAttribute="leading" secondItem="fOI-ay-FBk" secondAttribute="leading" constant="16" id="oDX-eO-NYS"/>
+                            <constraint firstAttribute="trailing" secondItem="CAI-W2-IrJ" secondAttribute="trailing" constant="16" id="sT1-y5-DYK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gdR-IO-ph9"/>
@@ -576,6 +604,7 @@
                         <outlet property="checkOutStack" destination="9bh-2K-Kut" id="Dcv-44-SIG"/>
                         <outlet property="orderListLabel" destination="Gi0-Ct-ELb" id="ETz-GG-0qP"/>
                         <outlet property="placeOrderButton" destination="5jh-N5-1fT" id="dYg-Nl-x8e"/>
+                        <outlet property="returnToHomeButton" destination="CAI-W2-IrJ" id="LUH-DW-TyY"/>
                         <outlet property="subtotalLabel" destination="ohT-X5-KVr" id="Cjp-dF-UzX"/>
                         <outlet property="thankYouMessage" destination="61N-RJ-CSi" id="NK8-la-55p"/>
                     </connections>
@@ -737,7 +766,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

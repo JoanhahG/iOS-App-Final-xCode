@@ -14,6 +14,7 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var thankYouMessage: UILabel!
     @IBOutlet weak var subtotalLabel: UILabel!
     @IBOutlet weak var placeOrderButton: UIButton!
+    @IBOutlet weak var returnToHomeButton: UIButton!
     var inventory = Inventory.sharedInstance.currentInventory;
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -33,8 +34,7 @@ class CheckOutViewController: UIViewController {
         super.viewDidLoad()
         orderListLabel.isHidden = true
         thankYouMessage.isHidden = true
-
-
+        returnToHomeButton.isHidden = true
     }
     
     @IBAction func orderPlacedPressed(_ sender: Any) {
@@ -48,11 +48,18 @@ class CheckOutViewController: UIViewController {
         orderListLabel.text = thankYouAddOn
         thankYouMessage.isHidden = false
         orderListLabel.isHidden = false
-        for products in Inventory.sharedInstance.currentInventory {
-            //products.cartCount = 0
+        returnToHomeButton.isHidden = false
+        
+        for i in 0 ... Inventory.sharedInstance.currentInventory.count - 1 {
+            Inventory.sharedInstance.currentInventory[i].cartCount = 0;
         }
     }
-    
-
-
+    @IBAction func returnToHomePressed(_ sender: Any) {
+        if let navigationController = self.navigationController {
+            navigationController.popViewController(animated: true)
+        }
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 1
+        }
+    }
 }
