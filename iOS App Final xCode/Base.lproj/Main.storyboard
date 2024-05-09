@@ -601,10 +601,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="gdR-IO-ph9"/>
                     <connections>
+                        <outlet property="addEntry" destination="jLJ-hb-mUk" id="GfN-CZ-Gxm"/>
+                        <outlet property="cardEntry" destination="5gH-XB-SNv" id="O9y-f6-XS3"/>
                         <outlet property="checkOutStack" destination="9bh-2K-Kut" id="Dcv-44-SIG"/>
+                        <outlet property="cityEntry" destination="yix-nr-JKQ" id="oz3-79-HhM"/>
+                        <outlet property="cvcEntry" destination="nSC-B3-FIJ" id="flS-6k-1XR"/>
+                        <outlet property="expEntry" destination="sQt-GC-Nj0" id="UlJ-e4-Jhm"/>
                         <outlet property="orderListLabel" destination="Gi0-Ct-ELb" id="ETz-GG-0qP"/>
                         <outlet property="placeOrderButton" destination="5jh-N5-1fT" id="dYg-Nl-x8e"/>
                         <outlet property="returnToHomeButton" destination="CAI-W2-IrJ" id="LUH-DW-TyY"/>
+                        <outlet property="stateEnt" destination="y8p-w5-bKb" id="c40-CQ-C0u"/>
                         <outlet property="subtotalLabel" destination="ohT-X5-KVr" id="Cjp-dF-UzX"/>
                         <outlet property="thankYouMessage" destination="61N-RJ-CSi" id="NK8-la-55p"/>
                     </connections>

@@ -15,6 +15,12 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var subtotalLabel: UILabel!
     @IBOutlet weak var placeOrderButton: UIButton!
     @IBOutlet weak var returnToHomeButton: UIButton!
+    @IBOutlet weak var cardEntry: UITextField!
+    @IBOutlet weak var expEntry: UITextField!
+    @IBOutlet weak var cvcEntry: UITextField!
+    @IBOutlet weak var addEntry: UITextField!
+    @IBOutlet weak var cityEntry: UITextField!
+    @IBOutlet weak var stateEnt: UITextField!
     var inventory = Inventory.sharedInstance.currentInventory;
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -38,6 +44,17 @@ class CheckOutViewController: UIViewController {
     }
     
     @IBAction func orderPlacedPressed(_ sender: Any) {
+        if(cardEntry.text!.isEmpty || expEntry.text!.isEmpty || cvcEntry.text!.isEmpty || addEntry.text!.isEmpty || cityEntry.text!.isEmpty || stateEnt.text!.isEmpty)
+        {
+            let alertController = UIAlertController(title: "Info Not Complete", message: "Please fill out the form to complete your order.", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            }
+            alertController.addAction(okAction)
+
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
         checkOutStack.isHidden = true
         var thankYouAddOn: String = ""
         for products in Inventory.sharedInstance.currentInventory {
